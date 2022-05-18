@@ -1,0 +1,900 @@
+/* ---------------------------- 전체영역 ---------------------------- */
+div#wrap{
+	position:relative;
+	width:100%;
+	height:auto;
+	margin:0 auto;
+}
+
+/* ---------------------------- 헤더영역 ---------------------------- */
+
+
+header{
+	position:fixed;
+	float:left;
+	width:100px;
+	height:408px;
+	margin:20px 0 0 20px;
+	z-index:999;
+}
+
+
+/* -------- 로고 (텍스트,바) -------- */
+
+#logo_animate{
+	position:relative;
+	width:100%;
+	height:118px;
+	background-color:#0b0a09;
+	text-indent:-9999px;
+	overflow:hidden;
+	cursor:pointer;
+}
+
+#logo_animate span{
+	position:absolute;
+	display:block;
+}
+#logo_animate img{		
+	position:absolute;
+} 
+
+/* 01 얌 */
+#logo_animate p.logo_line01 span.bar {	
+	top:25px;
+	left:-69px;
+	width:69px;
+	height:4px;
+	background-color:#fbb813;
+}
+p.logo_line01 img{	
+	top:24px;
+	left:20px;
+}
+/* 02 샘 */
+#logo_animate p.logo_line02 span.bar {	
+	top:119px;
+	right:23px;
+	width:4px;
+	height:93px;
+	background-color:#b1b835;
+}
+p.logo_line02 img{	
+	top:32px;
+	left:42px;
+}
+/* 03 김*/
+#logo_animate p.logo_line03 span.bar {	
+	top:-97px;
+	left:27px;
+	width:4px;
+	height:97px;
+	background-color:#f4811f;
+}
+p.logo_line03 img{	
+	top:60px;
+	left:27px;
+}
+/* 04 밥*/
+#logo_animate p.logo_line04 span.bar {	
+	bottom:21px;
+	left:100px;
+	width:64px;
+	height:4px;
+	background-color:#ee4f22;
+}
+p.logo_line04 img{	
+	top:67px;
+	left:54px;
+}
+
+/* -------- 네비게이션(gnb) 메뉴 -------- */
+
+nav.gnb{
+	height:290px;
+	background-image:url("../images/common/gnb_bg.gif");
+	background-repeat:no-repeat;
+	background-position:0 100%;
+	background-color:#191919;
+}
+
+nav.gnb ul li a{
+	display:block;
+	height:40px;
+	line-height:38px;
+	text-align:center;
+	border-top:1px solid #393939;
+	color:#888888;
+}
+
+nav.gnb ul li a:hover{
+	color:#fff;
+}
+
+
+
+/* -------- 우측 퀵 메뉴 -------- */
+aside#quick_menu{
+	position:fixed;
+	width:200px;
+	top:20px;
+	right:20px;
+	z-index:999;
+}
+aside#quick_menu ul{Position:absolute;Right:0;}
+aside#quick_menu ul li{
+	width:40px;
+	height:40px;
+	margin-bottom:7px;
+	background-repeat:no-repeat;
+	background-size:cover;
+}
+aside#quick_menu ul li a{display:block; width:100%; height:100%;}
+aside#quick_menu ul li:first-child{background-image:url("../images/common/quick_icon01.png");}
+aside#quick_menu ul li:nth-child(2){background-image:url("../images/common/quick_icon02.png");}
+aside#quick_menu ul li:last-child{margin-bottom:0;background-image:url("../images/common/quick_icon03.png");}
+
+aside#quick_menu ul li span{
+	display:block;
+	content:'';
+	position:relative;
+	top:6px;
+	height:28px;
+	line-height:31px;
+	color:#666;
+	text-indent:-9999px;
+}
+aside#quick_menu ul li:first-child:hover span{left:-55px;width:50px;background-image:url("../images/common/quick_bg01.png");text-indent:10px;}
+aside#quick_menu ul li:nth-child(2):hover span{left:-102px;width:97px;background-image:url("../images/common/quick_bg02.png");text-indent:15px;}
+aside#quick_menu ul li:last-child span{left:-163px;width:158px;background-image:url("../images/common/quick_tel.png");}
+
+
+
+/* ---------------------------- 콘텐츠영역 ---------------------------- */
+
+
+
+/* 공통 스타일 설정---------------------------------*/
+
+/* 타이틀 */
+.tit{
+	width:100%;
+	height:auto;
+	margin:50px auto;
+	text-align:center;
+	background-repeat:no-repeat;
+	background-position:top center;
+	text-indent:-9999px;
+}
+
+/* 창업문의 버튼 */
+.btn-inquiry{
+	display:block;
+	width:423px;
+	height:76px;
+	margin:50px auto;
+	background-image:url("../images/point/btn_inquiry.png");
+	background-repeat:no-repeat;
+	background-size:cover;
+	-webkit-transition: 0.2s;
+	-moz-transition:0.2s;
+	-o-transition: 0.2s;
+	transition: 0.2s;
+	text-indent:-9999px;
+}
+.btn-inquiry:hover{
+	background-image:url("../images/point/btn_inquiry_h.png");
+}
+
+
+/* 메인비주얼영역 ------------------------------------*/
+#container > #main_visual_wrap{
+	position:relative;
+	width:100%;
+	height:568px;
+	text-align:center;
+	background-image:url("../images/point/success_visual.jpg");	
+	background-repeat:no-repeat;
+	background-size:cover;
+}
+
+#container > #main_visual_wrap > strong{
+	position:absolute;
+	top:50%;
+	left:50%;
+	width:700px;
+	height:354px;
+	margin:-177px 0 0 -350px;
+	background-image:url("../images/point/visual_txt.png");	
+	background-repeat:no-repeat;
+	background-size:cover;
+	text-indent:-9999px;
+}
+
+
+
+/* 메인타이틀------------------------------------------*/
+#container > h2.tit{
+	background-image:url("../images/point/success_title.gif");
+}
+#container > h2 > small{
+	display:block;
+	height:16px;
+	line-height:16px;
+	margin-top:40px;
+	font-size: 16px;
+	font-weight:100;
+	text-indent:0;
+    color: #666;
+}
+
+
+
+/* Tab 메뉴--------------------------------------------*/
+
+#sub_tab_wrap > ul.sub_tab{
+	width:488px;
+	margin:0 auto;
+	z-index:999;
+}
+
+#sub_tab_wrap > ul.sub_tab > li{
+	float:left;
+	width:120px;
+	height:45px;
+	line-height:45px;
+	text-align:center;
+	border:1px solid #e6e6e6;
+	border-right:0;
+	background:#fff;
+}
+#sub_tab_wrap > ul.sub_tab > li:last-child{border-right:1px solid #e6e6e6;}
+
+#sub_tab_wrap > ul.sub_tab > li > a{
+	display:block;
+	width:100%;
+	height:100%;
+	color:#888;
+	-webkit-transition: 0.2s;
+	-moz-transition:0.2s;
+	-o-transition: 0.2s;
+	transition: 0.2s;
+}
+
+#sub_tab_wrap > ul.sub_tab > li > a:hover{
+	background:#000;
+	border-color:#000;
+	color:#fff;
+}
+#sub_tab_wrap > ul.sub_tab > li.on > a{
+	background-color:#000;
+	color:#fff;
+}
+
+
+/* 프로모션 --------------------------------------------*/
+#promotion-wrap > strong{
+	display:block;
+	width:699px;
+	height:187px;
+	margin:50px auto;
+	background-image:url("../images/point/success_point_title.gif");	
+	background-repeat:no-repeat;
+	background-size:cover;
+	text-indent:-9999px;
+}
+
+
+#promotion-wrap > .box_btn{
+	display:block;
+	width:906px;
+	height:715px;
+	margin:0 auto;
+	background-image:url("../images/point/promotion_benefit.gif");
+	background-repeat:no-repeat;
+	background-size:cover;
+	-webkit-transition: 0.2s;
+	-moz-transition:0.2s;
+	-o-transition: 0.2s;
+	transition: 0.2s;
+	text-indent:-9999px;
+}
+
+#promotion-wrap > .box_btn:hover{
+	background-image:url("../images/point/promotion_benefit_h.gif");
+}
+
+
+
+
+
+/* 01 - 브랜드 경쟁력 --------------------------------------------*/a
+#section01{
+	padding-top:100px;
+}
+
+#section01 h3.tit{
+	height:27px;
+	background-image:url("../images/point/f_con_title01.png");
+	background-size:auto 100%;
+}
+
+
+/* 리스트박스 */
+.list-box {
+	width:900px;
+	height:928px;
+	margin:0 auto;
+}
+.list-box > li{
+	width:900px;
+	height:296px;
+	margin-top:20px;
+	background-repeat:no-repeat;
+	background-size:cover;
+}
+
+.list-box > li > a{
+	display:block;
+	width:100%;
+	height:100%;
+	background-repeat:no-repeat;
+	background-position:center;
+	transform:scale(0.9,0.9);
+	-webkit-transition: 0.3s;
+	-moz-transition:0.3s;
+	-o-transition: 0.3s;
+	transition: 0.3s;
+	opacity:0.5;
+	text-indent:-9999px;
+}
+
+/* 박스 이미지 설정 */
+.list-box > li:first-child{background-image:url("../images/point/s_data01_item_obj01.jpg");}
+.list-box > li:nth-child(2){background-image:url("../images/point/s_data01_item_obj02.jpg");}
+.list-box > li:last-child{background-image:url("../images/point/s_data01_item_obj03.jpg");}
+.list-box > li:first-child > a{background-image:url("../images/point/s_data01_cell01_txt01.png");}
+.list-box > li:nth-child(2) > a{background-image:url("../images/point/s_data01_cell02_txt01.png");}
+.list-box > li:last-child > a{background-image:url("../images/point/s_data01_cell03_txt01.png");}
+
+/* 박스 hover */
+.list-box > li:hover > a{
+	transform:scale(1,1);
+	opacity:1;	
+}
+
+
+
+/* ---------------- 창업성공요소 --------------------------------------------*/
+
+
+/* 컨테이너 */
+#section02 > .cont {
+	width:900px;
+	height:auto;
+	margin:0 auto;
+}
+
+.step_wrap > li {padding-top:100px;}
+
+/* 타이틀 */
+.step_wrap > li > h3{margin:15px 0;}
+#step_01 > h3{background-image:url("../images/point/s_con_title01.png");}
+#step_02 > h3{background-image:url("../images/point/s_con_title02.png");}
+#step_03 > h3{background-image:url("../images/point/s_con_title03.png");}
+
+/* 서브 타이틀 */
+.step_wrap > li > h3 > small{
+	display:block;
+	height:19px;
+	margin-top:20px;
+	text-indent:-9999px;
+	background-repeat:no-repeat;
+	background-size:auto 100%;
+	background-position:center;
+}
+#step_01 > h3 > small{background-image:url("../images/point/success01_title.png");}
+#step_02 > h3 > small{background-image:url("../images/point/success02_title.png");}
+#step_03 > h3 > small{background-image:url("../images/point/success03_title.png");}
+
+/* 정보 */
+.step_wrap > li > p {
+	margin:15px 0 30px;
+	text-align:center;
+	color:#888;
+}
+
+
+/* STEP 1 --------------------------------------------*/
+
+/* BOX_01 */
+#step_01 > .box_01{
+	width:900px;
+	height:278px;
+}
+#step_01 > .box_01 > ul > li{
+	float:left;
+	position:relative;
+	width:33.334%;
+	height:278px;
+	line-height:22px;
+	font-size:16px;
+	font-weight:900;
+	text-align:center;
+	border:1px solid #ddd;
+	border-right:0;
+	background-repeat:no-repeat;
+	background-position:top 35px center;
+	background-color:#fff;
+	box-sizing:border-box;
+}
+
+#step_01 > .box_01 > ul > li:nth-child(1){background-image:url("../images/point/point01_cell01_obj01.png");}
+#step_01 > .box_01 > ul > li:nth-child(2){background-image:url("../images/point/point01_cell01_obj01.png");}
+#step_01 > .box_01 > ul > li:nth-child(3){background-image:url("../images/point/point01_cell01_obj02.png");border-right:1px solid #ddd;}
+
+#step_01 > .box_01 > ul > li > ul{
+	position:absolute;
+	top:50%;
+	left:50%;
+	margin:-43px 0 0 -40px;
+}
+#step_01 > .box_01 > ul > li > ul > li > span{
+	color:#f58220;
+}
+
+
+
+
+/* BOX_02 */
+#step_01 > .box_02 h4 {
+	height:19px;
+	background-image:url("../images/point/point01_cell02_title.gif");
+	margin:50px auto 20px;
+}
+#step_01 > .box_02 > ul{
+	height:210px;
+	margin-bottom:10px;
+}
+#step_01 > .box_02 > ul > li{
+	position:relative;
+	float:left;
+	width:150px;
+	height:210px;
+	font-size:15px;
+	text-align:center;
+	border:1px solid #ddd;
+	border-right:0;
+	background-color:#fff;
+	background-repeat:no-repeat;
+	background-position:top 35px center;
+	box-sizing:border-box;
+}
+#step_01 > .box_02 > ul > li:nth-child(1){background-image:url("../images/point/point01_cell02_obj01.png");}
+#step_01 > .box_02 > ul > li:nth-child(2){background-image:url("../images/point/point01_cell02_obj02.png");}
+#step_01 > .box_02 > ul > li:nth-child(3){background-image:url("../images/point/point01_cell02_obj03.png");}
+#step_01 > .box_02 > ul > li:nth-child(4){background-image:url("../images/point/point01_cell02_obj04.png");}
+#step_01 > .box_02 > ul > li:nth-child(5){background-image:url("../images/point/point01_cell02_obj05.png");}
+#step_01 > .box_02 > ul > li:nth-child(6){border-right:1px solid #ddd;background-image:url("../images/point/point01_cell02_obj06.png");
+}
+
+/* 박스 텍스트 */
+#step_01>.box_02>ul>li>p{line-height:23px;}
+#step_01>.box_02>ul>li>p:first-child{margin-top:100px;}
+#step_01>.box_02>ul>li>p:nth-child(2),
+#step_01>.box_02>ul>li>p:nth-child(3){letter-spacing:0; font-family:'NanumGothicBold'}
+#step_01>.box_02>ul>li>p.info{
+	margin-top:15px;
+	line-height:16px;
+	font-size:12px;
+	color:#888;
+}
+#step_01>.box_02>ul>li>p:nth-child(3) span{display:inline;color:#fff;}
+#step_01> .box_02 > ul > li > p > span{display:block;}
+
+/* 하단 추가정보 */
+#step_01> .box_02 > p {
+	line-height:22px;
+	color:#888;
+}
+	
+
+
+
+
+
+/* STEP 2 --------------------------------------------*/
+/* 기본설정 */
+#step_02 > div > .tit {
+	height:19px;
+	margin:50px auto 20px;
+}
+#step_02 > div > .img{
+	width:100%;
+	height:328px;
+	padding:20px;
+	border:1px solid #ddd;
+	box-sizing:border-box;
+}
+#step_02 > div > .img > p{
+	float:left;
+	display:block;
+	width:429px;
+	height:100%;
+	background-repeat:no-repeat;
+	background-size:cover;
+	text-indent:-9999px;
+}
+#step_02 > div > .txt {
+	height:50px;
+	padding-top:40px;
+	background-repeat:no-repeat;
+	background-position:center;
+	text-indent:-9999px;
+}
+
+
+/* 이미지1 */
+#step_02 > .box_01 > .tit {background-image:url("../images/point/point02_cell01_title.gif");}
+#step_02 > .box_01 > .img > p:nth-child(1){background-image:url("../images/point/point02_cell01_obj01.gif");}
+#step_02 > .box_01 > .img > p:nth-child(2){background-image:url("../images/point/point02_cell01_obj02.gif");}
+#step_02 > .box_01 > .txt {background-image:url("../images/point/point02_cell01_txt01.png");}
+/* 이미지2 */
+#step_02 > .box_02 > .tit {background-image:url("../images/point/point02_cell02_title.gif");}
+#step_02 > .box_02 > .img > p:nth-child(1){background-image:url("../images/point/point02_cell02_obj01.gif");}
+#step_02 > .box_02 > .img > p:nth-child(2){background-image:url("../images/point/point02_cell02_obj02.gif");}
+#step_02 > .box_02 > .txt {background-image:url("../images/point/point02_cell02_txt01.png");}
+
+
+
+
+/* STEP 3 --------------------------------------------*/
+/* 기본설정 */
+
+#step_03 > .box_01 > .img{
+	width:445px;
+	height:327px;
+	margin:0 auto;
+	padding:20px;
+	border:1px solid #ddd;
+	box-sizing:border-box;
+	background-image:url("../images/point/point03_item_obj01.gif");
+	background-repeat:no-repeat;
+}
+
+#step_03 > div > .txt {
+	line-height:23px;
+	padding-top:10px;
+	color: #888;
+	text-align:center;
+}
+#step_03 > div > .txt > span {
+	display:block;
+}
+#step_03 > div > .txt > span:last-child{
+	height:21px;
+	margin-top:10px;
+	background-image:url("../images/point/point03_txt.gif");
+	background-repeat:no-repeat;
+	background-position:center;
+	text-indent:-9999px;
+}
+
+
+
+/* 숫자롤링,카운트다운 --------------------------------------------*/
+
+/*01 - 첫번째---------*/
+.counter_01{
+	position:relative;
+	display:inline-block;
+	top:-2px;
+}
+.counter_01 .counter-holder span {
+    position: relative;
+    display: inline-block;
+    vertical-align: top;
+    line-height: 30px;
+	color:#f58220;
+}
+
+.counter_01 .counter .digit {
+    width: 11px;
+    height: 30px;
+    overflow: hidden;
+    text-align: center;
+}
+
+.counter-holder hr {
+    background: none;
+    border: 0;
+    clear: both;
+    display: block;
+    float: none;
+    font-size: 0;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    visibility: hidden;
+    width: 0;
+    height: 0;
+}
+
+/*02 - 두번째---------*/
+.counter_02{
+	position:absolute;
+	top:120px;
+}
+
+.counter_02.conA{left:27px;}
+.counter_02.conB{left:32px;}
+.counter_02.conC{left:37px;}
+.counter_02.conD{left:42px;}
+.counter_02.conE{left:42px;}
+.counter_02.conF{left:37px;}
+
+.counter_02 .counter-holder{
+	position:relative;
+}
+.counter_02 .counter-holder span {
+    position: relative;
+    display: inline-block;
+    vertical-align: top;
+    line-height: 30px;
+	font-family:'NanumGothicBold'
+}
+
+.counter_02 .counter .digit {
+    width: 9px;
+    height: 30px;
+    overflow: hidden;
+    text-align: center;
+}
+
+
+
+
+
+
+
+
+/* ---------------- 성공스토리 --------------------------------------------*/
+
+/* 타이틀 */
+#section03{
+	padding-top:100px;
+}
+#section03 h3{
+	height:28px;
+	margin:15px 0;
+	background-image:url("../images/point/f_con_title06.png");
+	background-size:auto 100%;
+}
+#section03 h3 + p {
+	line-height:20px;
+	margin:15px 0 30px;
+	text-align:center;
+	color:#888;
+}
+
+
+/* 비디오 */
+.video-wrap{
+	width:900px;
+	margin:0 auto;
+}
+.video-wrap > iframe{border:0;}
+
+/* 슬라이드 */
+.slide_wrap{
+	position:relative;
+	width:810px;
+	height:345px;
+	margin:50px auto 0;
+	padding:0 45px;
+}
+
+/* 슬라이드 화살표 */
+.arrow{
+	position:absolute;
+	top:50%;
+	margin-top:-72px;
+	display:block;
+	width:25px;
+	height:44px;
+	background-size:cover;
+	text-indent:-9999px;
+}
+.arrow.prev{left:0;background-image:url("../images/point/slide_prev.png");}
+.arrow.next{right:0;background-image:url("../images/point/slide_next.png");}
+
+
+/* 슬라이드 이미지 */
+.slide_box li .img{
+	display:block;
+	width:100%;
+	height:260px;
+	background-size:cover;
+	margin-bottom:20px;
+	text-indent:-9999px;
+}
+.slide_box li.sb1 > .img{background-image:url("../images/point/slide_01.jpg");}
+.slide_box li.sb2 > .img{background-image:url("../images/point/slide_02.jpg");}
+.slide_box li.sb3 > .img{background-image:url("../images/point/slide_03.jpg");}
+.slide_box li.sb4 > .img{background-image:url("../images/point/slide_04.jpg");}
+.slide_box li.sb5 > .img{background-image:url("../images/point/slide_05.jpg");}
+.slide_box li.sb6 > .img{background-image:url("../images/point/slide_06.jpg");}
+.slide_box li.sb7 > .img{background-image:url("../images/point/slide_07.jpg");}
+.slide_box li.sb8 > .img{background-image:url("../images/point/slide_08.jpg");}
+.slide_box li.sb9 > .img{background-image:url("../images/point/slide_09.jpg");}
+.slide_box li.sb10 > .img{background-image:url("../images/point/slide_10.jpg");}
+.slide_box li.sb11 > .img{background-image:url("../images/point/slide_11.jpg");}
+.slide_box li.sb12 > .img{background-image:url("../images/point/slide_12.jpg");}
+.slide_box li.sb13 > .img{background-image:url("../images/point/slide_13.jpg");}
+
+
+/* 슬라이드 하단 텍스트 */
+.slide_box li p.sb_tit a{
+	display: block;
+    font-size: 18px;
+    color: #444;
+    line-height: 20px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.slide_box li p.sb_info{
+	margin-top:8px;
+	line-height: 18px;
+	color:#888;
+}
+
+/* 슬라이드 hover설정 */
+.slide_box li .img:after{
+	display:block;
+	content:'';
+	position:absolute;
+	top:0;
+	width:100%;
+	height:260px;
+	background-color:rgba(0,0,0,0.5);
+	-webkit-transition: 0.2s;
+	-moz-transition:0.2s;
+	-o-transition: 0.2s;
+	transition: 0.2s;
+	opacity:0;
+}
+.slide_box li:hover .img:after{opacity:1;}
+
+.slide_box li:hover p.sb_tit a{
+	color:#ee4f22;
+}
+
+
+
+
+/* ---------------- 인테리어 --------------------------------------------*/
+
+/* 타이틀 */
+#section04{
+	padding-top:100px;
+}
+#section04 h3{
+	height:28px;
+	margin:15px 0;
+	background-image:url("../images/point/f_con_title07.png");
+	background-size:auto 100%;
+}
+#section04 h3 + p {
+	margin:15px 0 30px;
+	line-height:20px;
+	text-align:center;
+	color:#888;
+}
+#section04 h3 + p > span{display:block;}
+
+/* 이미지 박스 */
+#section04 .img-wrap{
+	position:relative;
+	width:910px;
+	height:856px;
+	margin:0 auto;
+}
+
+#section04 .img-wrap > li{
+	position:absolute;
+	width:292px;
+	height:194px;
+	margin:5px;
+	background-color:pink;
+	transform:scale(0,0);
+	-webkit-transition: 0.5s;
+	-moz-transition:0.5s;
+	-o-transition: 0.5s;
+	transition: 0.5s;
+}
+
+#section04 .img-wrap > li > a{
+	display:block;
+	width:100%;
+	height:100%;
+	text-indent:-9999px;
+}
+
+#section04 .img-wrap > li > a:after{
+	display:block;
+	position:absolute;
+	content:'';
+	top:0;
+	width:100%;
+	height:100%;
+	background-color:rgba(0,0,0,0.5);
+	-webkit-transition: 0.2s;
+	-moz-transition:0.2s;
+	-o-transition: 0.2s;
+	transition: 0.2s;
+	opacity:0;	
+}
+
+#section04 .img-wrap > li:hover > a:after{
+	opacity:1;	
+}
+
+#section04 .img-wrap > li:nth-child(1){height:389px; left:0; top:0;}
+#section04 .img-wrap > li:nth-child(2){height:438px; left:302px; top:0;}
+#section04 .img-wrap > li:nth-child(3){height:221px; left:604px; top:0;}
+#section04 .img-wrap > li:nth-child(4){left:0; top:399px;}
+#section04 .img-wrap > li:nth-child(5){left:302px; top:448px;}
+#section04 .img-wrap > li:nth-child(6){height:225px; left:604px; top:231px;}
+#section04 .img-wrap > li:nth-child(7){height:180px; left:0; top:603px;}
+#section04 .img-wrap > li:nth-child(8){left:302px; top:652px;}
+#section04 .img-wrap > li:nth-child(9){left:604px; top:466px;}
+
+#section04 .img-wrap > li:nth-child(1) a{background-image:url("../images/point/box-img_01.jpg");}
+#section04 .img-wrap > li:nth-child(2) a{background-image:url("../images/point/box-img_02.jpg");}
+#section04 .img-wrap > li:nth-child(3) a{background-image:url("../images/point/box-img_03.jpg");}
+#section04 .img-wrap > li:nth-child(4) a{background-image:url("../images/point/box-img_04.jpg");}
+#section04 .img-wrap > li:nth-child(5) a{background-image:url("../images/point/box-img_05.jpg");}
+#section04 .img-wrap > li:nth-child(6) a{background-image:url("../images/point/box-img_06.jpg");}
+#section04 .img-wrap > li:nth-child(7) a{background-image:url("../images/point/box-img_07.jpg");}
+#section04 .img-wrap > li:nth-child(8) a{background-image:url("../images/point/box-img_08.jpg");}
+#section04 .img-wrap > li:nth-child(9) a{background-image:url("../images/point/box-img_09.jpg");}
+
+/* ---------------------------- 푸터영역 ---------------------------- */
+footer{
+	width:100%;
+	height:130px;
+	padding:100px 0;
+	text-align:center;
+	color:#888;
+	font-size:110%;
+}
+
+footer address {
+	margin-top:20px;
+	font-style:normal;
+}
+
+
+/* ---------------------------- 하단 버튼 ---------------------------- */
+
+div.btn_top a {
+	position:fixed;
+	right:20px;
+	bottom:50px;
+	width:38px;
+	height:38px;
+	line-height:40px;
+	text-align:center;
+	font-weight:900;
+	letter-spacing:0;
+	color:#666;
+	border:1px solid #e3e3e3;
+	border-radius:50%;
+	background-color:#fff;
+	z-index:999;
+}
+div.btn_top a:active{
+	color:#666;
+}

@@ -1,0 +1,549 @@
+/* ---------------------------- 전체영역 ---------------------------- */
+div#wrap{
+	position:relative;
+	width:100%;
+	height:auto;
+	margin:0 auto;
+}
+
+/* ---------------------------- 헤더영역 ---------------------------- */
+
+
+header{
+	position:fixed;
+	float:left;
+	width:100px;
+	height:408px;
+	margin:20px 0 0 20px;
+	z-index:999;
+}
+
+
+/* -------- 로고 (텍스트,바) -------- */
+
+#logo_animate{
+	position:relative;
+	width:100%;
+	height:118px;
+	background-color:#0b0a09;
+	text-indent:-9999px;
+	overflow:hidden;
+	cursor:pointer;
+}
+
+#logo_animate span{
+	position:absolute;
+	display:block;
+}
+#logo_animate img{		
+	position:absolute;
+} 
+
+/* 01 얌 */
+#logo_animate p.logo_line01 span.bar {	
+	top:25px;
+	left:-69px;
+	width:69px;
+	height:4px;
+	background-color:#fbb813;
+}
+p.logo_line01 img{	
+	top:24px;
+	left:20px;
+}
+/* 02 샘 */
+#logo_animate p.logo_line02 span.bar {	
+	top:119px;
+	right:23px;
+	width:4px;
+	height:93px;
+	background-color:#b1b835;
+}
+p.logo_line02 img{	
+	top:32px;
+	left:42px;
+}
+/* 03 김*/
+#logo_animate p.logo_line03 span.bar {	
+	top:-97px;
+	left:27px;
+	width:4px;
+	height:97px;
+	background-color:#f4811f;
+}
+p.logo_line03 img{	
+	top:60px;
+	left:27px;
+}
+/* 04 밥*/
+#logo_animate p.logo_line04 span.bar {	
+	bottom:21px;
+	left:100px;
+	width:64px;
+	height:4px;
+	background-color:#ee4f22;
+}
+p.logo_line04 img{	
+	top:67px;
+	left:54px;
+}
+
+
+/* -------- 네비게이션(gnb) 메뉴 -------- */
+
+nav.gnb{
+	height:290px;
+	background-image:url("../images/common/gnb_bg.gif");
+	background-repeat:no-repeat;
+	background-position:0 100%;
+	background-color:#191919;
+}
+
+nav.gnb ul li a{
+	display:block;
+	height:40px;
+	line-height:38px;
+	text-align:center;
+	border-top:1px solid #393939;
+	color:#888888;
+}
+
+nav.gnb ul li a:hover{
+	color:#fff;
+}
+
+
+
+/* -------- 우측 퀵 메뉴 -------- */
+aside#quick_menu{
+	position:fixed;
+	width:200px;
+	top:20px;
+	right:20px;
+	z-index:999;
+}
+aside#quick_menu ul{Position:absolute;Right:0;}
+aside#quick_menu ul li{
+	width:40px;
+	height:40px;
+	margin-bottom:7px;
+	background-repeat:no-repeat;
+	background-size:cover;
+}
+aside#quick_menu ul li a{display:block; width:100%; height:100%;}
+aside#quick_menu ul li:first-child{background-image:url("../images/common/quick_icon01.png");}
+aside#quick_menu ul li:nth-child(2){background-image:url("../images/common/quick_icon02.png");}
+aside#quick_menu ul li:last-child{margin-bottom:0;background-image:url("../images/common/quick_icon03.png");}
+
+aside#quick_menu ul li span{
+	display:block;
+	content:'';
+	position:relative;
+	top:6px;
+	height:28px;
+	line-height:31px;
+	color:#666;
+	text-indent:-9999px;
+}
+aside#quick_menu ul li:first-child:hover span{left:-55px;width:50px;background-image:url("../images/common/quick_bg01.png");text-indent:10px;}
+aside#quick_menu ul li:nth-child(2):hover span{left:-102px;width:97px;background-image:url("../images/common/quick_bg02.png");text-indent:15px;}
+aside#quick_menu ul li:last-child span{left:-163px;width:158px;background-image:url("../images/common/quick_tel.png");}
+
+
+/* ---------------------------- 콘텐츠영역 ---------------------------- */
+
+
+/* -------- 01 슬라이드형 풀스크린 배너 -------- */
+section#main01{
+	width:100%;
+	height:900px;
+	position:relative;
+}
+
+/* 타이틀 텍스트 박스 */
+div.tit-wrap {
+	position:absolute;
+	float:left;
+	width:100%;
+	height:100px;
+	top:39%;
+	text-align:center;
+	text-indent:-9999px;
+	z-index:1;
+}
+div.tit-wrap h2{
+	margin:0 auto;
+	width:640px;
+	height:116px;
+	background-image:url("../images/main/main_big_title01.png");
+}
+div.tit-wrap p{
+	margin:15px auto 0;
+	width:318px;
+	height:21px;
+	background-image:url("../images/main/main_small_title01.png");
+}
+
+
+
+
+/* 슬라이드 배너01 */
+
+#main-visual{
+	position:relative;
+}
+
+#main-visual ul#slide_banner{
+	position:absolute;
+	width:300%;
+	height:900px;
+}
+
+#main-visual ul#slide_banner li{
+	float:left;
+	width:100%;
+	height:900px;
+	overflow: hidden;
+	text-indent:-9999px;
+	background-position:center center;
+	background-size:cover;
+}
+
+#video { 
+     position: absolute;
+     top: 0px;
+     left: 0px;
+     width: auto;
+     height: auto;
+     z-index: -100;
+     overflow: hidden;
+}
+
+section#main01 ul#slide_banner li span{
+	width:100%;
+	height:100%;
+	display:block;
+	background-color:rgba(0,0,0,0.5);
+	text-indent:-9999px;
+	z-index: -50;
+}
+
+/* 슬라이드 배너02 */
+section#main01 ul#slide_banner li:nth-child(2){
+	background-image:url("../images/main/main_visual_01.jpg");
+}
+
+/* 슬라이드 배너03 */
+section#main01 ul#slide_banner li:nth-child(3){
+	background-image:url("../images/main/main_visual_02.jpg");
+}
+
+
+
+/* 인디케이터 */
+ol.main01-pagination{
+	position:relative;
+	left:50%;
+	width:69px;
+	height:12px;
+	margin:20px 0 0 -34px;
+	z-index:999;
+}
+ol.main01-pagination li{
+	float:left;
+	width:15px;
+	height:15px;
+	margin-right:10px;
+	border-radius:15px;
+	background-color:rgba(255,255,255,0.5);
+	text-indent:-9999px;
+}
+ol.main01-pagination li:last-child{
+	margin:0;
+}
+
+ol.main01-pagination li a{
+	display:block;
+	width:100%;
+	height:100%;
+}
+
+ol.main01-pagination li.on{
+	background-color:#fbb813;
+}
+
+
+
+
+/* 슬라이드 화살표 */
+div.arrow a{
+	position:absolute;
+	width:29px;
+	height:56px;
+}
+div.arrow a.slides-prev{
+	top:50%;
+	left:20px;
+}
+div.arrow a.slides-next{
+	top:50%;
+	right:20px;
+}
+div.arrow a.downBtn{
+	top:50%;
+	left:50%;
+	width:43px;
+	height:26px;
+	padding-bottom:20px;
+	margin:375px 0 0 -22px;
+}
+
+
+
+
+/* -------- 02 얌샘스토리 -------- */
+
+section#main02{
+	position:relative;
+	width:100%;
+	height:900px;
+	text-align:center;
+	background-color:#FFF;
+}
+section#main02 > ul > li{
+	position:absolute;
+	width:100%;
+	height:100%;
+	background-size:cover;
+	background-repeat:no-repeat;
+	background-position:center center;
+}
+	/*슬라이드 이미지 설정*/
+	section#main02 > ul > li:first-child{background-image:url("../images/main/main_con_visual_01.jpg");}
+	section#main02 > ul > li:nth-child(2){background-image:url("../images/main/main_con_visual_02.jpg");}
+	section#main02 > ul > li:nth-child(3){background-image:url("../images/main/main_con_visual_03.jpg");}
+	section#main02 > ul > li:last-child{background-image:url("../images/main/main_con_visual_04.jpg");}
+
+
+ol.main02-pagination{
+	position:relative;
+	width:480px;
+	height:44px;
+	padding:100px 0;
+	margin:0 auto;
+	z-index:300;
+}
+ol.main02-pagination li{
+	float:left;
+	width:44px;
+	height:44px;
+	margin:0 38px;
+	text-indent:-9999px;
+}
+
+ol.main02-pagination li a{
+	display:block;
+	width:100%;
+	height:100%;
+	background-size:cover;
+	background-repeat:no-repeat;
+}
+
+ol.main02-pagination li:first-child a {background-image:url("../images/main/main_con01_off.png");}
+ol.main02-pagination li:nth-child(2) a{background-image:url("../images/main/main_con02_off.png");}
+ol.main02-pagination li:nth-child(3) a{background-image:url("../images/main/main_con03_off.png");}
+ol.main02-pagination li:last-child a{background-image:url("../images/main/main_con04_off.png");}
+
+ol.main02-pagination li:first-child:hover a {background-image:url("../images/main/main_con01_on.png");}
+ol.main02-pagination li:nth-child(2):hover a{background-image:url("../images/main/main_con02_on.png");}
+ol.main02-pagination li:nth-child(3):hover a{background-image:url("../images/main/main_con03_on.png");}
+ol.main02-pagination li:last-child:hover a{background-image:url("../images/main/main_con04_on.png");}
+
+
+ol.main02-pagination li.on:first-child a {background-image:url("../images/main/main_con01_on.png");}
+ol.main02-pagination li.on:nth-child(2) a{background-image:url("../images/main/main_con02_on.png");}
+ol.main02-pagination li.on:nth-child(3) a{background-image:url("../images/main/main_con03_on.png");}
+ol.main02-pagination li.on:last-child a{background-image:url("../images/main/main_con04_on.png");}
+
+
+
+div.txt-wrap{
+	padding:220px 0;
+	width:100%;
+}
+div.txt-wrap h2{
+	margin-top:30px;
+}
+div.txt-wrap p.txt_inpo_wrap{
+	margin-top:10px;
+	line-height:20px;
+}
+div.txt-wrap p.txt_inpo_link{
+	margin-top:28px;
+}
+
+
+
+
+
+/*에니메이션 jQuery설정*/
+P.txt_icon_wrap,
+h2.txt_title_wrap,
+p.txt_inpo_wrap,
+p.txt_inpo_link{
+	position:relative;
+}
+
+/* -------- 03 얌샘소식 -------- */
+
+/* 슬라이드창 설정 */
+section#main03{
+	position:relative;
+	width:100%;
+	height:578px;
+	padding:175px 0 70px;
+	text-align:center;
+}
+
+section#main03 h2 img{
+	width:78px;
+}
+div.box-wrap {
+	width:1200px;
+	margin:47px auto 0;
+}
+div.box-slides{
+	position:relative;
+	float:left;
+	overflow:hidden;
+	width:380px;
+	height:505px;
+	margin: 0 10px;
+}
+
+div.box-slides ul{
+	width:760px;
+}
+div.box-slides ul#news_03{
+	width:1140px;	
+}
+
+div.box-slides li{
+	float:left;
+	position:relative;
+	width:380px;
+	height:475px;
+} 
+
+div.info_wrap{
+	position:absolute;
+	bottom:0;
+	width:380px;
+	height:104px;
+	background-color:rgba(0,0,0,0.5)
+}
+p.info_title{font-size:130%; font-weight:bold; margin:15px 0 10px 0;}
+p.info_title, p.info_tex{color:#fff;}
+
+
+
+/* 슬라이드이미지 */
+ul#news_01,ul#news_02,ul#news_03{
+	position:absolute;
+	background-repeat:no-repeat;
+	background-size:cover;
+}
+
+ul#news_01 li:first-child{
+	background-image:url("../images/main/main_f085aaf38.jpg");}
+ul#news_01 li:nth-child(2){
+	background-image:url("../images/main/main_f3c8d40a6.jpg");
+}
+
+ul#news_02 li:first-child{
+	background-image:url("../images/main/main_fa1f1efa3.jpg");}
+ul#news_02 li:nth-child(2){
+	background-image:url("../images/main/main_ff4972cf4.jpg");
+}
+
+
+ul#news_03 li:first-child{
+	background-image:url("../images/main/main_f9fb572ca.jpg");}
+ul#news_03 li:nth-child(2){
+	background-image:url("../images/main/main_fcb5e70b5.jpg");}
+ul#news_03 li:nth-child(3){
+	background-image:url("../images/main/main_fd70b0708.jpg");
+}
+
+
+/* 인디케이터 */
+ol.main03-pagination{
+	position:absolute;
+	left:173px;
+	bottom:0;
+	width:34px;
+	height:12px;
+	margin:0;
+	z-index:999;
+}
+div.box-slides:last-child ol.main03-pagination{
+	left:162px;
+	width:56px;
+}
+ol.main03-pagination li{
+	width:12px;
+	height:12px;
+	margin-right:10px;
+	text-indent:-9999px;
+	background-image:url("../images/main/indicator.jpg");
+	background-repeat:no-repeat;
+}
+ol.main03-pagination li:last-child{
+	margin:0;
+}
+
+ol.main03-pagination li.on{
+	background-position:0 -13px;
+}
+
+
+
+/* ---------------------------- 푸터영역 ---------------------------- */
+footer{
+	width:100%;
+	height:130px;
+	padding:100px 0;
+	text-align:center;
+	color:#888;
+	font-size:110%;
+}
+
+footer address {
+	margin-top:20px;
+	font-style:normal;
+}
+
+
+/* ---------------------------- 하단 버튼 ---------------------------- */
+div.btn_top{
+	display:none;
+}
+div.btn_top a {
+	position:fixed;
+	right:20px;
+	bottom:50px;
+	width:38px;
+	height:38px;
+	line-height:40px;
+	text-align:center;
+	font-weight:900;
+	letter-spacing:0;
+	color:#666;
+	border:1px solid #e3e3e3;
+	border-radius:38px;
+	background-color:#fff;
+	z-index:999;
+}
+div.btn_top a:active{
+	color:#666;
+}
